@@ -9,7 +9,7 @@ $(function() {
       };
   
       // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/shakes/" + id, {
         type: "PUT",
         data: newSleepState
       }).then(
@@ -31,7 +31,7 @@ $(function() {
       };
   
       // Send the POST request.
-      $.ajax("/api/cats", {
+      $.ajax("/api/shakes", {
         type: "POST",
         data: newCat
       }).then(
@@ -47,7 +47,7 @@ $(function() {
       var id = $(this).data("id");
   
       // Send the DELETE request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/shakes/" + id, {
         type: "DELETE"
       }).then(
         function() {
