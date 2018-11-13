@@ -1,0 +1,26 @@
+{
+  "name": "DreamShake",
+  "version": "1.0.0",
+  "description": "A sample Heroku app using MySQL, Handlebars and Node.JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/circuitsyn/DreamShake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/circuitsyn/DreamShake/issues"
+  },
+  "homepage": "https://github.com/circuitsyn/DreamShake#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
