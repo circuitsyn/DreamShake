@@ -1,3 +1,12 @@
+body, html {
+    height: 100%;
+    /* background-image: url("https://cdn.hipwallpaper.com/i/98/66/HV82TQ.jpg"); */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 li {
     padding: 5px;
     margin: 5px;
