@@ -1,9 +1,65 @@
+{{!-- Main Greeting Section --}}
+<div class="container">
+    <div class="jumbotron">
+        <div class="col-md-6 bg mb-5">
+            <h1 class="display-4 font-weight-bold">Get Your Shake On!</h1>
+            <p class="lead font-weight-bold">Let's dream up your favorite kind of shake!</p>
+        </div>
+    
+        <div class="col-md-12 bg font-weight-bold mt-5">
+            <p>Get started by typing in your idea of an awesome shake below. Once you have submitted it you can then devour it by clicking devour. Let's get started!</p>
+        </div>
+    </div>
+
+    {{!-- Submit Section --}}
+
+
+    {{!-- Content Section --}}
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <h2>Shake Creations:</h2>
+            <div id="shakeCreations"></div>
+        </div>
+        <div class="mainImg m-3 col-md-2 d-flex justify-content-center">
+            <img src="./assets/images/milkshake.png" alt="Main Shake Image" >
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <h2>Devoured Shakes:</h2>
+            <div id="devouredShakes">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h1>Cats!</h1>
 
 <h2>Cats that are not sleepy!</h2>
 
 <ul>
-  {{#each cats}}
+  {{#each shakes}}
     {{#unless sleepy}}
       {{> shakes/shake-block sleep=true}}
     {{/unless}}
@@ -13,7 +69,7 @@
 <h2>Cats that are sleepy!</h2>
 
 <ul>
-  {{#each cats}}
+  {{#each shakes}}
     {{#if sleepy}}
       {{> shakes/shake-block sleep=false}}
     {{/if}}

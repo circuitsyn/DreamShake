@@ -1,7 +1,7 @@
 // Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 
-var cat = {
+var shake = {
   all: function(cb) {
     orm.all("shakes", function(res) {
       cb(res);
