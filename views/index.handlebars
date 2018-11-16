@@ -30,7 +30,17 @@
     <div class="row d-flex justify-content-center">
         <div class="col-md-4 d-flex justify-content-center">
             <h2>Shake Creations:</h2>
-            <div id="shakeCreations"></div>
+            <div class="row">
+                <div id="shakeCreations">
+                    <ul>
+                        {{#each shakes}}
+                            {{#unless sleepy}}
+                            {{> shakes/shake-block sleep=true}}
+                            {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="mainImg m-3 col-md-2 d-flex justify-content-center">
             <img src="./assets/images/milkshake.png" alt="Main Shake Image" height="250px">
@@ -38,7 +48,13 @@
         <div class="col-md-4 d-flex justify-content-center">
             <h2>Devoured Shakes:</h2>
             <div id="devouredShakes">
-
+                <ul>
+                    {{#each shakes}}
+                        {{#if sleepy}}
+                        {{> shakes/shake-block sleep=false}}
+                        {{/if}}
+                    {{/each}}
+                </ul>
             </div>
         </div>
     </div>
