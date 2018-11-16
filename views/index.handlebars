@@ -34,7 +34,7 @@
                 <div id="shakeCreations">
                     <ul>
                         {{#each shakes}}
-                            {{#unless sleepy}}
+                            {{#unless Drank}}
                             {{> shakes/shake-block sleep=true}}
                             {{/unless}}
                         {{/each}}
@@ -50,7 +50,7 @@
             <div id="devouredShakes">
                 <ul>
                     {{#each shakes}}
-                        {{#if sleepy}}
+                        {{#if Drank}}
                         {{> shakes/shake-block sleep=false}}
                         {{/if}}
                     {{/each}}

@@ -1,7 +1,7 @@
 // Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 
-var shake = {
+var shakes = {
   all: function(cb) {
     orm.all("shakes", function(res) {
       cb(res);
@@ -26,4 +26,4 @@ var shake = {
 };
 
 // Export the database functions for the controller (catsController.js).
-module.exports = shake;
+module.exports = shakes;

@@ -3,15 +3,15 @@ var express = require("express");
 var router = express.Router();
 
 // Import the model (cat.js) to use its database functions.
-var shake = require("../models/shake.js");
+var shakes = require("../models/shake.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  shake.all(function(data) {
+  shakes.all(function(data) {
     var hbsObject = {
       shakes: data
     };
-    console.log(hbsObject);
+    console.log('hbsObject: ', hbsObject);
     res.render("index", hbsObject);
   });
 });
