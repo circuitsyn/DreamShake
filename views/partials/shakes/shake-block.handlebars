@@ -1,9 +1,8 @@
 <li>
 	{{Shake}}
-
-	<button class="change-drank" data-id="{{id}}" data-newsleep="{{Drank}}">
-		{{#if Drank}}Drink Up!{{/if}}
+	{{#if Drank}}
+	<button class="change-drank btn btn-danger" data-id="{{id}}">
+		Drink Up!
 	</button>
-
-	{{!-- <button class="delete-cat" data-id="{{this.id}}">DELETE!</button> --}}
+	{{/if}}
 </li>
