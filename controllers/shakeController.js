@@ -20,7 +20,7 @@ router.post("/api/shakes", function(req, res) {
   shakes.create([
     "Shake", "Drank"
   ], [
-    req.body.name, req.body.sleepy
+    req.body.name, req.body.drankState
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
@@ -31,9 +31,9 @@ router.put("/api/shakes/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
-
-  shake.update({
-    sleepy: req.body.sleepy
+  console.log('req.body ', req.body);
+  shakes.update({
+    Drank: req.body.drankState
   }, condition, function(result) {
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
