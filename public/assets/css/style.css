@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    background-image: url("https://cdn.hipwallpaper.com/i/98/66/HV82TQ.jpg");
+    background-image: url("https://playingintheworldgame.files.wordpress.com/2012/08/shorpy_064610pu.jpg");
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -9,9 +9,11 @@ body, html {
 
 li {
     padding: 5px;
-    margin: 5px;
-    background: #faebd7;
+    margin: 7px;
+    background-color: rgb(232,232,232);
     list-style-type: none;
+    border-radius: 10px;
+    font-weight: bolder;
   }
   
   .label {
@@ -19,7 +21,10 @@ li {
   }
   
 .jumbotron {
-    background-image: url("http://burgerrepublic.com/wp-content/uploads/2015/12/BR_ShakeSlider.png");
+    background-image: url("../images/shakeHeaderImage.jpg");
+    border-radius: 10px;
+    height: 100%;
+    background-size: cover;
 }
 
 .bg {
@@ -33,13 +38,27 @@ li {
 
 .mainImg {
     
-    margin:auto;
+    margin: auto;
     
 }
 
-#resultsArea, #inputArea {
+#inputArea {
   background-color: white;
   margin: 5% 0% 5% 0%;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 1%;
+  margin: auto;
+
+}
+
+#resultsArea {
+  background-color: white;
+  margin: 5% 0% 5% 0%;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.resultTitle {
+  text-align: center;
+  font-weight: bolder;
 }
