@@ -7,12 +7,12 @@
         </div>
     
         <div class="col-md-12 bg font-weight-bold mt-5 pt-2 pb-1">
-            <p>Get started by typing in your idea of an awesome shake below. Once you have submitted it you can then devour it by clicking devour. Let's get started!</p>
+            <p>Get started by typing in your idea of an awesome shake below. Once you have submitted it you can then drink it by clicking devour. Let's get started!</p>
         </div>
     </div>
 
     {{!-- Submit Section --}}
-    <div class="row" id="inputArea">
+    <div class="row mt-5" id="inputArea">
         <div class="col-md-12 d-flex justify-content-center">
             <form class="create-form">
                 <div class="form-group mb-0 font-weight-bold">
@@ -33,7 +33,7 @@
             <h2 class="resultTitle mb-0">Shake Creations</h2>
             <hr>
             <div class="row d-flex flex-row justify-content-center">
-                <div id="shakeCreations">
+                <div id="shakeCreations" class="clearfix">
                     <ul>
                         {{#each shakes}}
                             {{#unless Drank}}
