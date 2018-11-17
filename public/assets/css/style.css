@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    /* background-image: url("https://cdn.hipwallpaper.com/i/98/66/HV82TQ.jpg"); */
+    background-image: url("https://cdn.hipwallpaper.com/i/98/66/HV82TQ.jpg");
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -11,21 +11,13 @@ li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    list-style-type: none;
   }
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
 .jumbotron {
     background-image: url("http://burgerrepublic.com/wp-content/uploads/2015/12/BR_ShakeSlider.png");
 }
@@ -40,6 +32,14 @@ li {
 }
 
 .mainImg {
-    border-radius: 20px;
+    
     margin:auto;
+    
+}
+
+#resultsArea, #inputArea {
+  background-color: white;
+  margin: 5% 0% 5% 0%;
+  border-radius: 25px;
+  padding: 1%;
 }

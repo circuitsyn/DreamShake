@@ -12,7 +12,7 @@
     </div>
 
     {{!-- Submit Section --}}
-    <div class="row">
+    <div class="row" id="inputArea">
         <div class="col-md-12 d-flex justify-content-center">
             <form class="create-form">
                 <div class="form-group">
@@ -27,9 +27,11 @@
         
 
     {{!-- Content Section --}}
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-4 d-flex justify-content-center">
+    <div  class="row d-flex justify-content-center">
+        <div id="resultsArea" class="col-md-4 d-flex justify-content-center">
+            <div class="row">
             <h2>Shake Creations:</h2>
+            </div>
             <div class="row">
                 <div id="shakeCreations">
                     <ul>
@@ -42,10 +44,10 @@
                 </div>
             </div>
         </div>
-        <div class="mainImg m-3 col-md-2 d-flex justify-content-center">
-            <img src="./assets/images/milkshake.png" alt="Main Shake Image" height="250px">
-        </div>
-        <div class="col-md-4 d-flex justify-content-center">
+
+        
+
+        <div id="resultsArea" class="col-md-4 d-flex justify-content-center">
             <h2>Devoured Shakes:</h2>
             <div id="devouredShakes">
                 <ul>
@@ -60,63 +62,3 @@
     </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1>Cats!</h1>
-
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each shakes}}
-    {{#unless sleepy}}
-      {{> shakes/shake-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each shakes}}
-    {{#if sleepy}}
-      {{> shakes/shake-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form>
