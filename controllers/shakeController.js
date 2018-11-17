@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/shakes", function(req, res) {
-  shake.create([
+  shakes.create([
     "name", "sleepy"
   ], [
     req.body.name, req.body.sleepy
@@ -47,7 +47,7 @@ router.put("/api/shakes/:id", function(req, res) {
 router.delete("/api/shakes/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  shake.delete(condition, function(result) {
+  shakes.delete(condition, function(result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
